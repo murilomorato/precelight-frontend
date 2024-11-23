@@ -3,16 +3,22 @@ import Navbar from '../components/molecules/Navbar/Navbar';
 import Section from '../components/organisms/Section';
 import Footer from '../components/organisms/Footer';
 import TopPageTitle from '../components/organisms/TopPageTitle/TopPageTitle';
+import ListSection from '../components/organisms/ListSection/ListSection';
+import './Home.css';
 
 function Home() {
     return (
-        <div>
-            <Navbar />
-            <TopPageTitle />
-            <Section title="Titulo da Section" content="Esta é a section inicial da aplicação." />
-            <Section title="Segunda section" content="Informações da segunda section." />
-            <Section title="Terceira section" content="Informações finais da primeira pagina." />
-            <Footer />
+        <div className="home-container">
+            <header className="navbar-section">
+                <Navbar />
+                <TopPageTitle />
+            </header>
+            <main className="body-section">
+                <ListSection />
+            </main>
+            <footer className="footer-section">
+                <Footer />
+            </footer>
         </div>
     );
 }
