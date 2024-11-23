@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from '../components/molecules/Navbar/Navbar';
-import Section from '../components/organisms/Section';
 import Footer from '../components/organisms/Footer';
 import TopPageTitle from '../components/organisms/TopPageTitle/TopPageTitle';
 import ListSection from '../components/organisms/ListSection/ListSection';
+import CreateSection from '../components/organisms/CreateSection/CreateSection';
 import './Home.css';
 
 function Home() {
@@ -15,6 +15,7 @@ function Home() {
             </header>
             <main className="body-section">
                 <ListSection />
+                <CreateSection />
             </main>
             <footer className="footer-section">
                 <Footer />
