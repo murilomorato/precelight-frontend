@@ -1,0 +1,68 @@
+.card-candle-item {
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Garante que o conteúdo excedente seja ocultado */
+    background-color: #fff;
+    /* Remove o fundo amarelo */
+    margin: 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card-candle-image img {
+    width: 220px;
+    height: 200px;
+    display: block;
+}
+
+.card-text-content {
+    background-color: #a29def;
+    border-radius: 16px;
+    position: relative;
+    top: -20px;
+    /* Move o texto 20px para cima, sobrepondo a imagem */
+    z-index: 1;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.card-candle-title {
+    padding-top: 6px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.card-candle-title h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: rgb(13 10 32);
+}
+
+.card-candle-description {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #666;
+    font-size: 1em;
+}
+
+.card-candle-footer {
+    padding: 16px;
+    width: 160px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9em;
+    color: #2e2e2e;
+    background-color: #ffb091;
+    border-radius: 16px;
+    position: relative;
+    top: -40px;
+    z-index: 1;
+    margin-bottom: -40px;
+}
+
+.card-candle-item:hover {
+    transform: translateY(-10px);
+}
