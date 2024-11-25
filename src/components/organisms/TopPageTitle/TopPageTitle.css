@@ -1,0 +1,30 @@
+.top-page-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+}
+
+.top-page-title-content {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.top-page-title h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.top-page-title p {
+    margin: 0;
+    font-size: 1.2em;
+}

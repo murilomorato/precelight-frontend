@@ -1,0 +1,17 @@
+.tools-create-section {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(138, 206, 43);
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .tools-create-section {
+        width: 100%;
+    }
+}

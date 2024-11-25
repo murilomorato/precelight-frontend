@@ -1,0 +1,31 @@
+.list-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.principal-section-item {
+    width: 74%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.secundary-section-item {
+    width: 25%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .principal-section-item {
+        flex: 1 1 100%;
+    }
+
+    .secundary-section-item {
+        flex: 1 1 100%;
+    }
+}

@@ -1,0 +1,31 @@
+.create-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.view-section-item {
+    width: 60%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.tools-section-item {
+    width: 39%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .view-section-item {
+        flex: 1 1 100%;
+    }
+
+    .tools-section-item {
+        flex: 1 1 100%;
+    }
+}
