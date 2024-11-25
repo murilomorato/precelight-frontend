@@ -1,12 +1,11 @@
 import React from 'react';
 import './cardCandleItem.css';
 
-function CardCandleItem({ candleItem }) {
+function CardCandleItem({ key, candleItem }) {
 
-    const title = 'Titulo do item com até 2 linhas';
-    const description = 'Esta é uma descrição breve do conteúdo da prece que é referente ao card. Até 4 linhas.';
-    const imageUrl = 'https://via.placeholder.com/150';
-    const likeCount = 120;
+    const { title, imageUrl, likeCount, description } = candleItem;
+    const descriptionMaxSize = 69;
+    const truncatedDescription = description.length > descriptionMaxSize ? `${description.substring(0, descriptionMaxSize)}...` : description;
 
     return (
         <div className="card-candle-item">
@@ -18,7 +17,7 @@ function CardCandleItem({ candleItem }) {
                     <h2>{title}</h2>
                 </div>
                 <div className="card-candle-description">
-                    <p>{description}</p>
+                    <p>{truncatedDescription}</p>
                 </div>
             </div>
             <div className="card-candle-footer">
